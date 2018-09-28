@@ -79,6 +79,11 @@ var y = parseInt(konum[0].getAttribute("y"));//parseInt bir String bağımsız d
 		}
 		yerlestir(x,y);
 	}
+	
+	
+
+}
+
 function yerlestir(x,y){
 var kutular = document.getElementsByClassName("ass");
 var kutu = document.querySelectorAll('[x="'+x+'"][y="'+y+'"]');//canlı olmayan bir statik döndürür NodeListseçicileri belirtilen grupla eşleşme belgenin öğelerin listesini temsil eden.
@@ -90,3 +95,10 @@ var kutu = document.querySelectorAll('[x="'+x+'"][y="'+y+'"]');//canlı olmayan 
 	if(kutu){
 		kutu[0].setAttribute("class", "selected ass");  //Belirtilen öğedeki bir özelliğin değerini ayarlar. Özellik zaten mevcutsa, değer güncellenir; Aksi takdirde belirtilen isim ve değerle yeni bir özellik eklenir.
 	}
+	
+	}
+</script>
+	
+
+</body>
+</html>
