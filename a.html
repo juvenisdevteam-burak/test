@@ -47,3 +47,35 @@ var basilanTus = e.keyCode;                                 //bastığımız tu�
 var konum = document.getElementsByClassName("selected"); //selected adındaki  belgede NodeList nesnesi olarak belirtilensınıf adıyla tüm öğelerin bir koleksiyonunu döndürür.
 var x = parseInt(konum[0].getAttribute("x"));//parseInt bir String bağımsız değişken ayrıştırır ve belirtilen radix bir tamsayı döndürür.
 var y = parseInt(konum[0].getAttribute("y"));//parseInt bir String bağımsız değişken ayrıştırır ve belirtilen radix bir tamsayı döndürür.
+		                   //1.satırdaki 1.kutu oluyor 
+		x = x-1;
+		yerlestir(x,y);
+		if(x<=0){
+		x=1;
+		}
+	}
+	if(basilanTus == 38){
+		y = y-1;               //eğer basılan tuş 38 ise x=z-1 yerleştir if eğer x<=0 ise x i 1 yerleştir
+		                      
+		if(y<=0){
+		y=1;
+		}
+		yerlestir(x,y);
+	}
+	if(basilanTus == 39){          //eğer basılan tuş 39 ise x=z-1 yerleştir if eğer x<=0 ise x i 1 yerleştir
+		                            
+		if(x>=5){
+		x=4;
+		}
+		yerlestir(x,y);
+	}
+	if(basilanTus == 40){
+		y = y+1;
+		if(x==4){
+		x=3;
+		}
+		if(y>=3){
+		y=2;
+		}
+		yerlestir(x,y);
+	}
