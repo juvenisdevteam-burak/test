@@ -44,3 +44,6 @@
 function degistir(e){
 
 var basilanTus = e.keyCode;                                 //bastığımız tuşun unicode değerini alıyor
+var konum = document.getElementsByClassName("selected"); //selected adındaki  belgede NodeList nesnesi olarak belirtilensınıf adıyla tüm öğelerin bir koleksiyonunu döndürür.
+var x = parseInt(konum[0].getAttribute("x"));//parseInt bir String bağımsız değişken ayrıştırır ve belirtilen radix bir tamsayı döndürür.
+var y = parseInt(konum[0].getAttribute("y"));//parseInt bir String bağımsız değişken ayrıştırır ve belirtilen radix bir tamsayı döndürür.
