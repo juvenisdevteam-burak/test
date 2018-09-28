@@ -79,3 +79,14 @@ var y = parseInt(konum[0].getAttribute("y"));//parseInt bir String bağımsız d
 		}
 		yerlestir(x,y);
 	}
+function yerlestir(x,y){
+var kutular = document.getElementsByClassName("ass");
+var kutu = document.querySelectorAll('[x="'+x+'"][y="'+y+'"]');//canlı olmayan bir statik döndürür NodeListseçicileri belirtilen grupla eşleşme belgenin öğelerin listesini temsil eden.
+	 
+	[].forEach.call(kutular, function(el) { //foreach dögü bittiğinde her seferinde tekrar döndürür
+    el.classList.remove("selected");  //Remove Birlikte çağrıldığı metnin, parametre olarak verilen değerinin bulunduğu indeks değerinden itibaren yine parametre olarak verilen adet kadar olan kısmını siler. Silinme işleminden arta kalan metni geriye döndürür.
+	});
+	 
+	if(kutu){
+		kutu[0].setAttribute("class", "selected ass");  //Belirtilen öğedeki bir özelliğin değerini ayarlar. Özellik zaten mevcutsa, değer güncellenir; Aksi takdirde belirtilen isim ve değerle yeni bir özellik eklenir.
+	}
