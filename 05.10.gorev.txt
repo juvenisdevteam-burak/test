@@ -1,0 +1,7 @@
+php ile veritabanı bağlayıp bir site yapacaksın.
+
+
+
+
+anasayfa->yazılar=>veritabanından gelecek
+ürünler->4 tane ürün koy => veritabanından gelecek
